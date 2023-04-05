@@ -4,12 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#D090E1"
+    android:backgroundTint="#D090E1"
     tools:context=".LeagueActivity">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="197dp"
         android:layout_height="228dp"
+        android:background="#D090E1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,31 +22,49 @@
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="361dp"
+        android:layout_width="315dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/toggle_state"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <ToggleButton
-            android:id="@+id/toggleButton6"
+            android:id="@+id/toggleButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ToggleButton" />
+            android:background="@drawable/toggle_state"
+            android:text="Mens"
+            android:textColor="@color/white"
+            android:textOff="Mens"
+            android:textOn="Mens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton7"
+            android:id="@+id/toggleButton5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ToggleButton" />
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/toggle_state"
+            android:text="Womens"
+            android:textColor="@color/white"
+            android:textOff="Womens"
+            android:textOn="Womens" />
 
         <ToggleButton
-            android:id="@+id/toggleButton8"
+            android:id="@+id/toggleButton4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="ToggleButton" />
+            android:background="@drawable/toggle_state"
+            android:text="ToggleButton"
+            android:textColor="@color/white"
+            android:textOff="Co-Ed"
+            android:textOn="Co-Ed"
+            tools:text="Co-Ed" />
 
     </LinearLayout>
 
@@ -51,7 +72,7 @@
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:background="#E30B5A"
+        android:background="@drawable/btn_check_state"
         android:text="NEXT"
         android:textColor="#29ED32"
         android:textSize="24sp"
@@ -59,4 +80,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
