@@ -9,7 +9,8 @@
     tools:context=".LeagueActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+
+        android:id="@+id/FrontImage"
         android:layout_width="197dp"
         android:layout_height="228dp"
         android:background="#D090E1"
@@ -18,7 +19,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0.07999998"
-        app:srcCompat="@drawable/football" />
+        app:srcCompat="@drawable/football"
+        android:contentDescription="Front Image" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -50,10 +52,10 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/btn_check_state"
-            android:text="Womens"
+            android:text="Women's"
             android:textColor="@color/white"
-            android:textOff="Womens"
-            android:textOn="Womens" />
+            android:textOff="Women's"
+            android:textOn="Women's" />
 
         <ToggleButton
             android:id="@+id/toggleButton4"
